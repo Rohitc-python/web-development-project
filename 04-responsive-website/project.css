@@ -1,0 +1,199 @@
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    background-color: rgb(210, 212, 214);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0px 50px;
+}
+
+.navbar a {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(224, 5, 248);
+
+}
+
+.logo {
+    height: 7vh;
+    width: auto;
+    text-align: center;
+    filter: invert();
+}
+
+.login {
+    width: 85px;
+    height: 35px;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 19px;
+    font-weight: 700;
+    background-color: rgb(204, 96, 79);
+    color: white;
+    border: 1px solid grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: red;
+    color: rgb(254, 249, 249);
+    font-size: 20px;
+
+}
+
+#Hero h1 {
+    overlay: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 4em;
+    text-shadow: 0px 0px 10px red;
+    color: white;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.content {
+    padding-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color: rgb(245, 248, 245);
+
+}
+
+.content h2 {
+    color: blue;
+
+}
+
+.image {
+    height: 30vh;
+    width: 40%;
+    border-radius: 40px;
+}
+
+.responce {
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(45, 234, 45);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.responce:hover {
+    font-size: 12px;
+}
+
+
+@media (max-width:768px) {
+    .navbar {
+        display: none;
+    }
+
+    #Hero h1 {
+        padding: 1em;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .image {
+        width: 30%;
+        margin-top: 55px;
+    }
+
+    .content {
+        font-size: 15px;
+        padding-left: 10px;
+        width: 50%;
+    }
+
+    .content h2 {
+        color: white;
+        text-shadow: 0px 0px 15px rgb(179, 11, 222);
+        font-size: 1.2em;
+        text-decoration: underline;
+    }
+
+    .responce {
+        background-color: white;
+        box-shadow: inset 0px 0px 15px green;
+    }
+
+}
+
+@media (min-width:768px) {
+    .navbar {
+        margin: 10px;
+    }
+
+    .logo {
+        height: 10vh;
+    }
+
+    .content {
+        color: rgb(249, 249, 249);
+        width: 50%;
+
+    }
+
+    .content h2 {
+        color: white;
+        text-shadow: 0px 0px 15px blue;
+        text-decoration: underline;
+    }
+
+    .image {
+        width: 30%;
+        margin-top: 55px;
+    }
+
+    #Hero h1 {
+        padding: 2em;
+    }
+
+    .responce {
+        box-shadow: inset 0px 0px 15px blue;
+        font-size: 12px;
+        border: none;
+        background-color: white;
+    }
+
+    .responce:hover {
+        box-shadow: inset 0px 0px 15px red;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+}
